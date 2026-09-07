@@ -1,0 +1,1 @@
+'use client';\n\nimport Dashboard from '@/components/Dashboard';\n\nexport default function Home() {\n  return (\n    <div className=\"min-h-screen bg-gray-950\">\n      <Dashboard />\n    </div>\n  );\n}\n
