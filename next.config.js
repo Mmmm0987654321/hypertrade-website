@@ -1,0 +1,1 @@
+/** @type {import('next').NextConfig} */\nconst nextConfig = {\n  reactStrictMode: true,\n  swcMinify: true,\n  webpack: (config, { isServer }) => {\n    config.externals.push('pino-pretty', 'lokijs', 'encoding');\n    return config;\n  },\n};\n\nmodule.exports = nextConfig;\n
